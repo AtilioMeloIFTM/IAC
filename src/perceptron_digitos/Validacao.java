@@ -6,7 +6,7 @@ public class Validacao {
     }
     
     public double[] somatorio(int[][] mat, double[][] w) {
-        double[] yent = new double[4]; // Atualizado para 4 saídas
+        double[] yent = new double[10]; // Atualizado para 10 saídas
         double[] entrada = new double[16];
         int l = 1;
         entrada[0] = 1;
@@ -16,7 +16,7 @@ public class Validacao {
                 l++;
             }
         }
-        for (int k = 0; k < 4; k++) { // Atualizado para 4 saídas
+        for (int k = 0; k < 10; k++) { // Atualizado para 10 saídas
             yent[k] = 0;
             for (int j = 0; j < 16; j++) {
                 yent[k] += entrada[j] * w[j][k];
